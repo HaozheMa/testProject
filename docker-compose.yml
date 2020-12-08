@@ -1,0 +1,52 @@
+version: '3.7'
+
+services:
+  users:
+    build: ./users
+    ports: 
+      - 3010:3010
+      - 4010:4010
+    environment: 
+      AUTH_HOST: auth
+      COMPANY_HOST: company
+      VACANCY_HOST: vacancy
+      USERS_HOST: users
+  auth:
+    build: ./auth
+    ports: 
+      - 3000:3000
+      - 4000:4000
+    environment: 
+      AUTH_HOST: auth
+      COMPANY_HOST: company
+      VACANCY_HOST: vacancy
+      USERS_HOST: users
+ 
+  company:
+    build: ./company
+    ports: 
+      - 3030:3030
+      - 4020:4020
+    environment: 
+      AUTH_HOST: auth
+      COMPANY_HOST: company
+      VACANCY_HOST: vacancy
+      USERS_HOST: users
+  vacancy:
+    build: ./vacancy
+    ports: 
+      - 3020:3020
+      - 4040:4040
+    environment: 
+      AUTH_HOST: auth
+      COMPANY_HOST: company
+      VACANCY_HOST: vacancy
+      USERS_HOST: users
+  bff-admin:
+    build: ./bff-admin
+    ports: 
+      - 4500:4500
+  bff-user:
+    build: ./bff-user
+    ports: 
+      - 4600:4600
