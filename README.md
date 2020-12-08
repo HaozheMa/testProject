@@ -1,87 +1,46 @@
-# Project Title
-
-One Paragraph of project description goes here
+# testProject
+A code test
 
 ## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This Project run in Docker.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+Install Docker Desktop if you do not have it. 
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Run docker package using docker-compose command
 
 ```
-Give the example
+# docker
+$ docker-compose up #--build 
 ```
 
-And repeat
+then browse
 
-```
-until finished
-```
+http://localhost:4600 for user client API
 
-End with an example of getting some data out of the system or using it for a little demo
+and
+
+http://localhost:4500 for admin client API
+
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+working on the test! TODO
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* [NestJS](https://docs.nestjs.com/) - a framework for building efficient, scalable Node.js server-side applications
+* [TypeScript](https://www.typescriptlang.org/) - an open-source language which builds on JavaScript
+* [MongoDB](https://www.mongodb.com/) -  a general purpose, document-based, distributed database
+* [GraphQL](https://graphql.org/learn/) -  a query language for APIs
+* [Apollo server](https://www.apollographql.com/docs/apollo-server/) -  an open-source, spec-compliant GraphQL server
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+Thanks to the users of Stackoverflow！
+learned a lot from alibghz(https://github.com/alibghz/nestjs-microservices-docker)
+
