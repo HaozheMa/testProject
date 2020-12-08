@@ -23,7 +23,7 @@ this project use BFF(Backend for Frontend) pattern, which has 2 BFF service
 1. user client:
   * according to the user story, the user can only login and view vacancies. so in this service, only implenment login method and method to show vacancy data
 
-1. user client:
+2. admin client:
   * according to the user story, the admin can login and do CRUD for vacancies. so in this service, login, view, create, edit and delete method are all implenmented.
 
 
