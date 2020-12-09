@@ -1,5 +1,5 @@
 # testProject
-## this project has 4 microservice：
+### this project has 4 microservice：
 
 #### 1. Authorization microservice：
    * this service handle authorization and validate functions, like login
@@ -18,7 +18,7 @@
       * prepare for the future development of company-related APIs
       * a good microservice design should follow [Database per service pattern](https://microservices.io/patterns/data/database-per-service.html)
 
-## this project use BFF(Backend for Frontend) pattern, which has 2 BFF service
+### this project use BFF(Backend for Frontend) pattern, which has 2 BFF service
 
 #### 1. user client:
   * according to the user story, the user can only login and view vacancies. so in this service, only implenment login method and method to show vacancy data
